@@ -7,10 +7,16 @@ const portfolioImages = {
   project1:
     "/Developer_Portfolio/assets/SafeScript-Logo.jpg",
   project2:
-    "/Developer_Portfolio/assets/Blog_pic.jpg",
+    "/Developer_Portfolio/assets/Mindryx-Page.png",
   project3:
-    "/Developer_Portfolio/assets/Portfolio_Pic.jpg",
+    "/Developer_Portfolio/assets/Network_Architecture.png",
   project4:
+    "/Developer_Portfolio/assets/Power_BI_Dashboard.png",
+  project5:
+    "/Developer_Portfolio/assets/Blog_pic.jpg",
+  project6:
+    "/Developer_Portfolio/assets/Portfolio_Pic.jpg",
+  project7:
     "https://api.builder.io/api/v1/image/assets/TEMP/59e42bb15b97198af3623297b09c14aa0283e0cd?width=1126",
   // Technology icons - Add new ones here
   react:
@@ -150,23 +156,51 @@ const projects = [
   },
   {
     id: 2,
+    title: "Mindryx - AI Study Platform",
+    description:
+      "Full-stack AI-powered quiz generation platform. Generates quizzes from topics or PDFs using WebLLM and cloud functions, integrates Stripe Sandbox for payments, and supports PDF OCR with Tesseract.js.",
+    image: portfolioImages.project2,
+    technologies: ["Next.js", "Supabase", "Docker", "WebLLM", "Stripe"],
+    link: "https://github.com/Humza987/Mindryx",
+  },
+  {
+    id: 3,
+    title: "Azure Networking Environment",
+    description:
+      "Engineered a secure, multi-tier Azure networking environment with Terraform, including VNets, subnets, NAT Gateway, private endpoints, VNet peering, and Application Gateway. Automated deployment of Spring Boot apps on private VMs.",
+    image: portfolioImages.project3,
+    technologies: ["Azure", "Terraform", "Spring Boot"],
+    link: "https://github.com/Humza987/Azure_Networking",
+  },
+  {
+    id: 4,
+    title: "IoT Real-time Azure Streaming Pipeline",
+    description:
+      "Real-time IoT telemetry pipeline using Azure Event Hub and Stream Analytics. Implements ML anomaly detection, integrates with Azure SQL and ADLS, and visualizes data in Power BI via Azure Functions.",
+    image: portfolioImages.project4,
+    technologies: [".NET", "Azure", "SQL", "Power BI"],
+    link: "https://github.com/Humza987/Azure_IoT_Realtime_Data_Pipeline",
+  },
+  {
+    id: 5,
     title: "Cloud-Deployed Blog Platform",
     description:
       "Full-stack MERN blog platform with automated CI/CD pipeline, image upload, and cloud deployment. Implemented RESTful API with Express.js backend and MongoDB Atlas for CRUD operations.",
-    image: portfolioImages.project2,
+    image: portfolioImages.project5,
     technologies: ["React", "Express.js", "MongoDB"],
     link: "https://github.com/Humza987/Blog_Platform",
   },
   {
-    id: 3,
+    id: 6,
     title: "Portfolio Website",
     description:
       "A modern, responsive portfolio website built with React and featuring smooth animations and dark/light mode support.",
-    image: portfolioImages.project3,
+    image: portfolioImages.project6,
     technologies: ["React", "TypeScript", "TailwindCSS"],
     link: "https://github.com/placeholder",
   },
 ];
+
 
 const socialLinks = {
   email: "mailto:humzainam@gmail.com",
@@ -174,7 +208,7 @@ const socialLinks = {
   github: "https://github.com/Humza987",
 };
 
-const resumeLink = "https://drive.google.com/file/d/1Lz0vALCMn9dXzd0fSeTaSX02r7amHNpW/view?usp=sharing"; // Modifiable
+const resumeLink = "https://drive.google.com/file/d/1gSNihxSlKWQNvo6sESqGfn3zjwNhFQkk/view?usp=sharing"; // Modifiable
 
 // Animated typing text component
 function AnimatedTypingText({ isDarkMode }: { isDarkMode: boolean }) {
@@ -426,7 +460,7 @@ function ProjectDisplay() {
                   ))}
                 </div>
 
-                {project.id !== 3 && (<a
+                {project.id !== 6 && (<a
                
                href={project.link}
                target="_blank"
