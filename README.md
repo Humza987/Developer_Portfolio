@@ -1,6 +1,6 @@
 # Humza Inam Portfolio
 
-Welcome to my personal developer portfolio. This site showcases my projects, technical skills, and contact information.
+Welcome to my personal developer portfolio. This site showcases my projects, technical skills, and contact information. 
 
 ## Projects
 Featured projects include:
